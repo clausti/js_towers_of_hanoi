@@ -1,0 +1,46 @@
+body {
+	box-sizing: border-box;
+}
+
+.game {
+	background-color: #F5F5DC;
+	width: 800px;
+	height: 200px;
+	float: left;
+}
+
+.tower {
+	background-color: #F5F5DC;
+	width: 250px;
+	height: 200px;
+	float: left;
+}
+
+.block {
+	opacity: 0.0;
+  width: 50px;
+  height: 50px;
+	float: left;
+}
+
+.block-full {
+	background-color: red;
+  width: 50px;
+  height: 50px;
+	float: left;
+}
+
+.block-highlight {
+/*	background-color: yellow;*/
+	box-sizing: border-box;
+	border-style: solid;
+	border-width: 2px;
+	border-color: yellow;
+  width: 50px;
+  height: 50px;
+	float: left;
+}
+
+.marquee {
+	font-size: 40pt;
+}
