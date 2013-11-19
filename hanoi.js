@@ -17,7 +17,7 @@
 
   Game.prototype.isWon = function () {
     // move all the discs to the last tower
-    return (this.towers[2].length == 3) || (this.towers[1].length == 3);
+    return ( this.towers[2].length == 3 );
   };
 
   Game.prototype.isValidMove = function (startTowerIdx, endTowerIdx) {
