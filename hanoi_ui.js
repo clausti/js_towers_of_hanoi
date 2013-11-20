@@ -100,6 +100,10 @@
 			UI.addBlock(row[i], targetTower)
 		}
 	};
+  
+  UI.prototype.removeInstructions = function(clickEvent) {
+    $('.instructions').html('');
+  };
 
 })();
 
@@ -109,5 +113,5 @@ $(document).ready(function() {
 	uiObject.render();
 
 	$('.game').on('click', uiObject.eachClick.bind(uiObject));
-
+  $('.game').one('click', uiObject.removeInstructions.bind(uiObject));
 });

@@ -42,6 +42,14 @@ body {
 	float: left;
 }
 
+.instructions {
+  position: absolute;
+  top: 10px;
+  left: 15px;
+  display: block;
+	font-size: 20pt;
+}
+
 .marquee {
   position: absolute;
   top: 10px;
