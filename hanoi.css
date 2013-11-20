@@ -48,6 +48,7 @@ body {
   left: 15px;
   display: block;
 	font-size: 20pt;
+  line-height: 25px;
 }
 
 .marquee {
