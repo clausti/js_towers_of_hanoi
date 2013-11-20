@@ -4,15 +4,15 @@ body {
 
 .game {
 	background-color: #F5F5DC;
-	width: 800px;
+	width: 1050px;
 	height: 200px;
 	float: left;
 }
 
 .tower {
 	background-color: #F5F5DC;
-	width: 250px;
-	height: 200px;
+	width: 350px;
+	height: 250px;
 	float: left;
 }
 

@@ -8,16 +8,15 @@
   // });
 
   var Game = Hanoi.Game = function () {
-    this.towers = [[5, 3, 1], [], []];
+    this.towers = [[7, 5, 3, 1], [], []];
   };
 
-  Game.prototype.turn = function () {
-
-  }
+  // Game.prototype.turn = function () {
+  // 
+  // }
 
   Game.prototype.isWon = function () {
-    // move all the discs to the last tower
-    return ( this.towers[2].length == 3 );
+    return ( this.towers[2].length == 4 );
   };
 
   Game.prototype.isValidMove = function (startTowerIdx, endTowerIdx) {

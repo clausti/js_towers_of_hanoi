@@ -11,16 +11,21 @@
 	UI.prototype.render = function() {
 		this.clearGame();
 
-		for(var i = 0; i< this.game.towers.length; i++) {
+		for (var i = 0; i < this.game.towers.length; i++) {
 			var targetTower = $(".tower")[i];
 			var gameTower = this.game.towers[i];
 
 			UI.makeDisc(0, targetTower); // make empty row for visuals.
-			for(var j = 2; j >= 0; j--) {
+			for(var j = 3; j >= 0; j--) {
 				var disc = gameTower[j];
 				UI.makeDisc(disc, targetTower);
 			}
 		}
+	};
+  
+	UI.prototype.clearGame = function() {
+		$(".block").remove();
+		$(".block-full").remove();
 	};
 
 	UI.prototype.makeMove = function() {
@@ -81,9 +86,9 @@
 	UI.makeDisc = function(disc, targetTower) {
 		var row = [];
 		var discVal = disc || 0;
-		var padding = (5 - discVal) / 2;
+		var padding = (7 - discVal) / 2;
 
-		for (var i = 0; i < 5; i++) {
+		for (var i = 0; i < 7; i++) {
 			if(i < padding || i >= (padding + discVal)) {
 				row.push(false);
 			} else {
@@ -95,13 +100,6 @@
 			UI.addBlock(row[i], targetTower)
 		}
 	};
-
-	UI.prototype.clearGame = function() {
-		$(".block").remove();
-		$(".block-full").remove();
-	}
-
-
 
 })();
 
