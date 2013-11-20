@@ -15,7 +15,7 @@
 			var targetTower = $(".tower")[i];
 			var gameTower = this.game.towers[i];
 
-			UI.makeDisc(0, targetTower); // make empty row for visuals.
+			UI.makeDisc(0, targetTower);
 			for(var j = 3; j >= 0; j--) {
 				var disc = gameTower[j];
 				UI.makeDisc(disc, targetTower);

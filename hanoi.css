@@ -5,8 +5,10 @@ body {
 .game {
 	background-color: #F5F5DC;
 	width: 1050px;
-	height: 200px;
+	height: 250px;
 	float: left;
+  border-style: solid;
+  border-color: #873D0B;
 }
 
 .tower {
@@ -31,10 +33,9 @@ body {
 }
 
 .block-highlight {
-/*	background-color: yellow;*/
 	box-sizing: border-box;
 	border-style: solid;
-	border-width: 2px;
+	border-width: 1px;
 	border-color: yellow;
   width: 50px;
   height: 50px;
@@ -42,5 +43,9 @@ body {
 }
 
 .marquee {
+  position: absolute;
+  top: 10px;
+  left: 15px;
+  display: block;
 	font-size: 40pt;
 }
